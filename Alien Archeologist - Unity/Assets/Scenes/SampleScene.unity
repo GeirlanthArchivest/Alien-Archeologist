@@ -238,6 +238,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStartMessage: Whats up?
   updateMessage: Oh you're fine
+  message1: The stored integer is 1
+  message2: The stored integer is 2
+  message3: The stored integer is 3
+  messageChoice: 0
 --- !u!4 &1605369443
 Transform:
   m_ObjectHideFlags: 0

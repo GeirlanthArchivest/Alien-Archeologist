@@ -6,6 +6,10 @@ public class TestScript : MonoBehaviour
 {
     public string myStartMessage;
     public string updateMessage;
+    public string message1;
+    public string message2;
+    public string message3;
+    public int messageChoice;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +21,22 @@ public class TestScript : MonoBehaviour
     void Update()
     {
         Debug.Log(updateMessage);
+
+        if (messageChoice == 1)
+        {
+            Debug.Log(message1);
+        }
+        else if (messageChoice == 2)
+        {
+            Debug.Log(message2);
+        }
+        else if (messageChoice == 3)
+        {
+            Debug.Log(message3);
+        }
+        else
+        {
+            Debug.Log("Invalid Message Choice");
+        }
     }
 }
