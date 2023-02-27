@@ -242,6 +242,11 @@ MonoBehaviour:
   message2: The stored integer is 2
   message3: The stored integer is 3
   messageChoice: 0
+  messages:
+  - This is the first message
+  - This is the second message
+  - This is the third message
+  - This is the fourth message
 --- !u!4 &1605369443
 Transform:
   m_ObjectHideFlags: 0
