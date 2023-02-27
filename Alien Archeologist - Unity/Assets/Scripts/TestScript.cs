@@ -10,6 +10,7 @@ public class TestScript : MonoBehaviour
     public string message2;
     public string message3;
     public int messageChoice;
+    public string[] messages;
 
     // Start is called before the first frame update
     void Start()
@@ -22,21 +23,36 @@ public class TestScript : MonoBehaviour
     {
         Debug.Log(updateMessage);
 
-        if (messageChoice == 1)
+         /*if (messageChoice <= messages.Length && messageChoice >=1)
+         {
+             Debug.Log(messages[messageChoice - 1]);
+         }
+         else
+         {
+             Debug.Log("Invalid Message Choice");
+         }*/
+        for (int i = 0; i < messages.Length; ++i)
         {
-            Debug.Log(message1);
+            Debug.Log(messages[i]);
+        }
+
+
+        /*if (messageChoice == 1)
+        {
+            Debug.Log(messages[0]);
         }
         else if (messageChoice == 2)
         {
-            Debug.Log(message2);
+            Debug.Log(messages[1]);
         }
         else if (messageChoice == 3)
         {
-            Debug.Log(message3);
+            Debug.Log(messages[2]);
         }
         else
         {
             Debug.Log("Invalid Message Choice");
-        }
+        }*/
+
     }
 }
